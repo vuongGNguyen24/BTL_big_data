@@ -32,7 +32,7 @@ def main():
     # Predict button
     if st.button("Predict Price"):
         prediction = model.predict(xTest)
-        st.success(f"The predicted price of the house is: ${prediction[0]:,.2f}")
+        st.success(f"The predicted price of the house is: {prediction[0]:,.2f} billion dong")
 
 if __name__ == "__main__":
     main()
